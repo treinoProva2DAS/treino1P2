@@ -29,8 +29,14 @@ public class Linha2DTest {
 	public void testCalculaCoeficiente(){
 		l1a = new Ponto(0,0);
 		l1b = new Ponto(1,2);
+		
+		l2a = new Ponto(0,0);
+		l2b = new Ponto(2,4);
+		
 		l1 = new Linha2D(l1a,l1b);
+		l2 = new Linha2D(l1a,l1b);
 		
 		assertEquals(2, l1.calculacoeficiente(),0.01);
+		assertEquals(2, l2.calculacoeficiente(),0.01);
 	}
 }
