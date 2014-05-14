@@ -11,12 +11,12 @@ public class Linha2DTest {
 	Ponto l1b,l2b;
 
 	@Test
-	public void test() {
+	public void testRetasSeTocam() {
 		l1a = new Ponto(0,0);
 		l1b = new Ponto(1,2);
 		
 		l2a = new Ponto(0,0);
-		l2b = new Ponto(0,4);
+		l2b = new Ponto(3,4);
 		
 		l1 = new Linha2D(l1a,l1b);
 		l2 = new Linha2D(l2a,l2b);

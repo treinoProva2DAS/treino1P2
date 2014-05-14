@@ -12,6 +12,8 @@ public class Linha2D {
 	}
 
 	public static boolean interseccao(Linha2D l1, Linha2D l2) {
+		if(l1.calculacoeficiente() == l2.calculacoeficiente())
+			return false;
 		return true;
 	}
 
