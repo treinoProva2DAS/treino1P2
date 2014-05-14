@@ -1,0 +1,26 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class Linha2DTest {
+	
+	Linha2D l1,l2;
+	Ponto l1a,l2a;
+	Ponto l1b,l2b;
+
+	@Test
+	public void test() {
+		l1a = new Ponto(0,0);
+		l1b = new Ponto(2,2);
+		
+		l2a = new Ponto(0,0);
+		l2b = new Ponto(2,2);
+		
+		l1 = new Linha2D(l1a,l1b);
+		l2 = new Linha2D(l2a,l2b);
+		
+		assertTrue(Linha2D.interseccao(l1,l2));
+	}
+
+}

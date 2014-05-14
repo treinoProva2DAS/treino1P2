@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class Linha2DTest {
+	
+	Linha2D l1;
+	Ponto a;
+	Ponto b;
+
+	@Test
+	public void test() {
+		
+	}
+
+}
