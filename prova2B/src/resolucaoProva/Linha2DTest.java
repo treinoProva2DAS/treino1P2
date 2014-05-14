@@ -36,7 +36,7 @@ public class Linha2DTest {
 		l1 = new Linha2D(l1a,l1b);
 		l2 = new Linha2D(l2a,l2b);
 		
-		assertFalse(Linha2D.interseccao(l1,l2));
+		assertTrue(Linha2D.interseccao(l1,l2));
 	}
 	
 	
