@@ -13,7 +13,7 @@ public class Linha2DTest {
 	@Test
 	public void test() {
 		l1a = new Ponto(0,0);
-		l1b = new Ponto(0,2);
+		l1b = new Ponto(1,2);
 		
 		l2a = new Ponto(0,0);
 		l2b = new Ponto(0,4);
@@ -27,6 +27,10 @@ public class Linha2DTest {
 	
 	@Test
 	public void testCalculaCoeficiente(){
-		assertEquals(2, l1.calculacoeficiente());
+		l1a = new Ponto(0,0);
+		l1b = new Ponto(1,2);
+		l1 = new Linha2D(l1a,l1b);
+		
+		assertEquals(2, l1.calculacoeficiente(),0.01);
 	}
 }
