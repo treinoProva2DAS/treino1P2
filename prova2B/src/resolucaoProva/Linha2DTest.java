@@ -24,6 +24,23 @@ public class Linha2DTest {
 		assertTrue(Linha2D.interseccao(l1,l2));
 	}
 	
+	@Test
+	public void testRetasNaoSeTocam() {
+		l1a = new Ponto(0,0);
+		l1b = new Ponto(1,2);
+		
+		l2a = new Ponto(1,1);
+		l2b = new Ponto(3,3);
+		
+		
+		l1 = new Linha2D(l1a,l1b);
+		l2 = new Linha2D(l2a,l2b);
+		
+		assertFalse(Linha2D.interseccao(l1,l2));
+	}
+	
+	
+	
 	
 	@Test
 	public void testCalculaCoeficiente(){
